@@ -1,7 +1,10 @@
 package main.java;
 
-public class Numero {
+public class Cadena {
+
 	public static void main(String[] args) {
-		int numero=497;
+		String palabra="hola";
+		
 	}
+
 }
