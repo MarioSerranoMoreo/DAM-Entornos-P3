@@ -17,8 +17,10 @@ public class Arrays {
 	public static void main(String[] args) {
 		int array[]={1,5,4,9,3};
 		int numeroMaximo=maximo(array);
+		int numeroMinimo=minimo(array);
 		System.out.println("Numero maximo "+numeroMaximo);
 		System.out.println("Mediana "+mediana(array));
+		System.out.println("Numero minimo "+minimo(array));
 	}
 	public static int maximo(int[]maximo) {
 		int numeroMaximo=0;
@@ -28,5 +30,19 @@ public class Arrays {
 			}
 		}
 		return numeroMaximo;
+	}
+	public static int minimo(int[]array) {
+		int min=0;
+		 
+		min=array[0];
+ 
+		for(int i = 1; i < array.length; i++)
+		{
+			if(min>array[i])
+			{
+				min=array[i];
+			}
+			}
+		return min;
 	}
 }
